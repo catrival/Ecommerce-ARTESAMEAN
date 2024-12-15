@@ -26,5 +26,93 @@ export const AsideMenuAdminGeneral = {
           }
         ]
       },
+      { section: 'Productos' },
+      {
+        title: 'Categorias',
+        root: true,
+        name: "categorias",
+        bullet: 'dot',
+        icon: 'flaticon2-user-outline-symbol',
+        svg: './assets/media/svg/icons/Home/Commode2.svg',
+        page: '/categorias',
+        submenu: [
+          {
+            title: 'Lista Categorias',
+            page: '/categorias/list'
+          }
+        ]
+      },
+      {
+        title: 'Productos',
+        root: true,
+        name: "productos",
+        bullet: 'dot',
+        icon: 'flaticon2-user-outline-symbol',
+        svg: './assets/media/svg/icons/Devices/TV2.svg',
+        page: '/productos',
+        submenu: [
+          {
+            title: 'Crear Producto',
+            page: '/productos/registrar-producto'
+          },
+          {
+            title: 'Lista Productos',
+            page: '/productos/lista-de-todos-los-productos'
+          },
+        ]
+      },
+      {
+        title: 'Sliders',
+        root: true,
+        name: "sliders",
+        bullet: 'dot',
+        icon: 'flaticon2-user-outline-symbol',
+        svg: './assets/media/svg/icons/Design/Image.svg',
+        page: '/sliders',
+        submenu: [
+          {
+            title: 'Lista Sliders',
+            page: '/sliders/lista-sliders'
+          }
+        ]
+      },
+      {
+        title: 'Cupones',
+        root: true,
+        name: "cupones",
+        bullet: 'dot',
+        icon: 'flaticon2-user-outline-symbol',
+        svg: './assets/media/svg/icons/Devices/Cardboard-vr.svg',
+        page: '/cupones',
+        submenu: [
+          {
+            title: 'Registrar Cupon',
+            page: '/cupones/registrar-cupon'
+          },
+          {
+            title: 'Lista Cupones',
+            page: '/cupones/listar-cupones'
+          }
+        ]
+      },
+      {
+        title: 'Descuento',
+        root: true,
+        name: "descuento",
+        bullet: 'dot',
+        icon: 'flaticon2-user-outline-symbol',
+        svg: './assets/media/svg/icons/General/Clipboard.svg',
+        page: '/descuento',
+        submenu: [
+          {
+            title: 'Registrar Descuento',
+            page: '/descuento/registrar-descuento'
+          },
+          {
+            title: 'Lista Descuentos',
+            page: '/descuento/listar-descuento'
+          }
+        ]
+      },
     ]
 }

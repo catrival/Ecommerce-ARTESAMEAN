@@ -1,8 +1,8 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { SubheaderService } from '../_services/subheader.service';
-/*import { KTUtil } from '../../../../../../assets/js/components/util';
-import KTLayoutSubheader from '../../../../../../assets/js/layout/base/subheader'; */
+import { KTUtil } from '../../../../../../assets/js/components/util';
+import KTLayoutSubheader from '../../../../../../assets/js/layout/base/subheader';
 import { Router, ResolveEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
@@ -29,11 +29,11 @@ export class SubheaderWrapperComponent implements OnInit, AfterViewInit {
       .subscribe(initSubheader);
   }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   ngAfterViewInit() {
-    /*KTUtil.ready(() => {
+    KTUtil.ready(() => {
       KTLayoutSubheader.init('kt_subheader');
-    });*/
+    });
   }
 }
